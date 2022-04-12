@@ -1,0 +1,17 @@
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage [DDL]
+
+STAGE PLANS:
+  Stage: Stage-0
+      Create Table Operator:
+        Create Table
+          columns: r_regionkey bigint, r_name string, r_comment string
+          field delimiter: |
+          input format: org.apache.hadoop.mapred.TextInputFormat
+          line delimiter: 
+
+          output format: org.apache.hadoop.hive.ql.io.IgnoreKeyTextOutputFormat
+          serde name: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+          name: default.region
+
+

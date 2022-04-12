@@ -1,0 +1,44 @@
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage [MOVE]
+  Stage-1 depends on stages: Stage-0 [STATS]
+
+STAGE PLANS:
+  Stage: Stage-0
+    Move Operator
+      tables:
+          replace: true
+          source: file:/home/hadoop/test-data/dataset/nation.tbl
+          table:
+              input format: org.apache.hadoop.mapred.TextInputFormat
+              output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+              properties:
+                COLUMN_STATS_ACCURATE {"BASIC_STATS":"true","COLUMN_STATS":{"n_comment":"true","n_name":"true","n_nationkey":"true","n_regionkey":"true"}}
+                bucket_count -1
+                bucketing_version 2
+                column.name.delimiter ,
+                columns n_nationkey,n_name,n_regionkey,n_comment
+                columns.comments 
+                columns.types bigint:string:bigint:string
+                field.delim |
+                file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                line.delim 
+
+                location hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/nation
+                name default.nation
+                numFiles 0
+                numRows 0
+                rawDataSize 0
+                serialization.ddl struct nation { i64 n_nationkey, string n_name, i64 n_regionkey, string n_comment}
+                serialization.format |
+                serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                totalSize 0
+                transient_lastDdlTime 1638196254
+              serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+              name: default.nation
+
+  Stage: Stage-1
+    Stats Work
+      Basic Stats Work:
+
+

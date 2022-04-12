@@ -1,0 +1,197 @@
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage [MAPRED]
+  Stage-2 depends on stages: Stage-1 [MAPRED]
+  Stage-0 depends on stages: Stage-2 [FETCH]
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+          TableScan
+            alias: lineitem
+            filterExpr: (CAST( l_shipdate AS TIMESTAMP) <= TIMESTAMP'1998-09-25 00:00:00') (type: boolean)
+            GatherStats: false
+            Filter Operator
+              isSamplingPred: false
+              predicate: (CAST( l_shipdate AS TIMESTAMP) <= TIMESTAMP'1998-09-25 00:00:00') (type: boolean)
+              Select Operator
+                expressions: l_returnflag (type: string), l_linestatus (type: string), l_quantity (type: decimal(10,0)), l_extendedprice (type: decimal(10,0)), (l_extendedprice * (1 - l_discount)) (type: decimal(22,0)), ((l_extendedprice * (1 - l_discount)) * (1 + l_tax)) (type: decimal(34,0)), l_discount (type: decimal(10,0))
+                outputColumnNames: _col0, _col1, _col2, _col3, _col4, _col5, _col6
+                Group By Operator
+                  aggregations: sum(_col2), sum(_col3), sum(_col4), sum(_col5), count(_col2), count(_col3), sum(_col6), count(_col6), count()
+                  keys: _col0 (type: string), _col1 (type: string)
+                  mode: hash
+                  outputColumnNames: _col0, _col1, _col2, _col3, _col4, _col5, _col6, _col7, _col8, _col9, _col10
+                  Reduce Output Operator
+                    key expressions: _col0 (type: string), _col1 (type: string)
+                    null sort order: aa
+                    sort order: ++
+                    Map-reduce partition columns: _col0 (type: string), _col1 (type: string)
+                    tag: -1
+                    value expressions: _col2 (type: decimal(20,0)), _col3 (type: decimal(20,0)), _col4 (type: decimal(32,0)), _col5 (type: decimal(38,0)), _col6 (type: bigint), _col7 (type: bigint), _col8 (type: decimal(20,0)), _col9 (type: bigint), _col10 (type: bigint)
+                    auto parallelism: false
+      Execution mode: vectorized
+      Path -> Alias:
+        hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/lineitem [$hdt$_0:lineitem]
+      Path -> Partition:
+        hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/lineitem 
+          Partition
+            base file name: lineitem
+            input format: org.apache.hadoop.mapred.TextInputFormat
+            output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+            properties:
+              bucket_count -1
+              bucketing_version 2
+              column.name.delimiter ,
+              columns l_orderkey,l_partkey,l_suppkey,l_linenuber,l_quantity,l_extendedprice,l_discount,l_tax,l_returnflag,l_linestatus,l_shipdate,l_commitdate,l_receiptdate,l_shipinstruct,l_shipmode,l_comment
+              columns.comments 
+              columns.types bigint:bigint:bigint:bigint:decimal(10,0):decimal(10,0):decimal(10,0):decimal(10,0):string:string:date:date:date:string:string:string
+              field.delim |
+              file.inputformat org.apache.hadoop.mapred.TextInputFormat
+              file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+              line.delim 
+
+              location hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/lineitem
+              name default.lineitem
+              numFiles 1
+              numRows 0
+              rawDataSize 0
+              serialization.ddl struct lineitem { i64 l_orderkey, i64 l_partkey, i64 l_suppkey, i64 l_linenuber, decimal(10,0) l_quantity, decimal(10,0) l_extendedprice, decimal(10,0) l_discount, decimal(10,0) l_tax, string l_returnflag, string l_linestatus, date l_shipdate, date l_commitdate, date l_receiptdate, string l_shipinstruct, string l_shipmode, string l_comment}
+              serialization.format |
+              serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+              totalSize 39532662007
+              transient_lastDdlTime 1638196698
+            serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+          
+              input format: org.apache.hadoop.mapred.TextInputFormat
+              output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+              properties:
+                bucket_count -1
+                bucketing_version 2
+                column.name.delimiter ,
+                columns l_orderkey,l_partkey,l_suppkey,l_linenuber,l_quantity,l_extendedprice,l_discount,l_tax,l_returnflag,l_linestatus,l_shipdate,l_commitdate,l_receiptdate,l_shipinstruct,l_shipmode,l_comment
+                columns.comments 
+                columns.types bigint:bigint:bigint:bigint:decimal(10,0):decimal(10,0):decimal(10,0):decimal(10,0):string:string:date:date:date:string:string:string
+                field.delim |
+                file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                line.delim 
+
+                location hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/lineitem
+                name default.lineitem
+                numFiles 1
+                numRows 0
+                rawDataSize 0
+                serialization.ddl struct lineitem { i64 l_orderkey, i64 l_partkey, i64 l_suppkey, i64 l_linenuber, decimal(10,0) l_quantity, decimal(10,0) l_extendedprice, decimal(10,0) l_discount, decimal(10,0) l_tax, string l_returnflag, string l_linestatus, date l_shipdate, date l_commitdate, date l_receiptdate, string l_shipinstruct, string l_shipmode, string l_comment}
+                serialization.format |
+                serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                totalSize 39532662007
+                transient_lastDdlTime 1638196698
+              serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+              name: default.lineitem
+            name: default.lineitem
+      Truncated Path -> Alias:
+        /lineitem [$hdt$_0:lineitem]
+      Needs Tagging: false
+      Reduce Operator Tree:
+        Group By Operator
+          aggregations: sum(VALUE._col0), sum(VALUE._col1), sum(VALUE._col2), sum(VALUE._col3), count(VALUE._col4), count(VALUE._col5), sum(VALUE._col6), count(VALUE._col7), count(VALUE._col8)
+          keys: KEY._col0 (type: string), KEY._col1 (type: string)
+          mode: mergepartial
+          outputColumnNames: _col0, _col1, _col2, _col3, _col4, _col5, _col6, _col7, _col8, _col9, _col10
+          Select Operator
+            expressions: _col0 (type: string), _col1 (type: string), _col2 (type: decimal(20,0)), _col3 (type: decimal(20,0)), _col4 (type: decimal(32,0)), _col5 (type: decimal(38,0)), CAST( (CAST( _col2 AS decimal(14,4)) / _col6) AS decimal(14,4)) (type: decimal(14,4)), CAST( (CAST( _col3 AS decimal(14,4)) / _col7) AS decimal(14,4)) (type: decimal(14,4)), CAST( (_col8 / _col9) AS decimal(14,4)) (type: decimal(14,4)), _col10 (type: bigint)
+            outputColumnNames: _col0, _col1, _col2, _col3, _col4, _col5, _col6, _col7, _col8, _col9
+            File Output Operator
+              compressed: false
+              GlobalTableId: 0
+              directory: hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/e483b03a-15cf-4d5a-bbdd-63f55fe0711a/hive_2021-11-29_14-41-50_288_8855124698239780965-1/-mr-10004
+              NumFilesPerFileSink: 1
+              table:
+                  input format: org.apache.hadoop.mapred.SequenceFileInputFormat
+                  output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat
+                  properties:
+                    column.name.delimiter ,
+                    columns _col0,_col1,_col2,_col3,_col4,_col5,_col6,_col7,_col8,_col9
+                    columns.types string,string,decimal(20,0),decimal(20,0),decimal(32,0),decimal(38,0),decimal(14,4),decimal(14,4),decimal(14,4),bigint
+                    escape.delim \
+                    serialization.lib org.apache.hadoop.hive.serde2.lazybinary.LazyBinarySerDe
+                  serde: org.apache.hadoop.hive.serde2.lazybinary.LazyBinarySerDe
+              TotalFiles: 1
+              GatherStats: false
+              MultiFileSpray: false
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+          TableScan
+            GatherStats: false
+            Reduce Output Operator
+              key expressions: _col0 (type: string), _col1 (type: string)
+              null sort order: aa
+              sort order: ++
+              tag: -1
+              value expressions: _col2 (type: decimal(20,0)), _col3 (type: decimal(20,0)), _col4 (type: decimal(32,0)), _col5 (type: decimal(38,0)), _col6 (type: decimal(14,4)), _col7 (type: decimal(14,4)), _col8 (type: decimal(14,4)), _col9 (type: bigint)
+              auto parallelism: false
+      Execution mode: vectorized
+      Path -> Alias:
+        hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/e483b03a-15cf-4d5a-bbdd-63f55fe0711a/hive_2021-11-29_14-41-50_288_8855124698239780965-1/-mr-10004 [hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/e483b03a-15cf-4d5a-bbdd-63f55fe0711a/hive_2021-11-29_14-41-50_288_8855124698239780965-1/-mr-10004]
+      Path -> Partition:
+        hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/e483b03a-15cf-4d5a-bbdd-63f55fe0711a/hive_2021-11-29_14-41-50_288_8855124698239780965-1/-mr-10004 
+          Partition
+            base file name: -mr-10004
+            input format: org.apache.hadoop.mapred.SequenceFileInputFormat
+            output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat
+            properties:
+              column.name.delimiter ,
+              columns _col0,_col1,_col2,_col3,_col4,_col5,_col6,_col7,_col8,_col9
+              columns.types string,string,decimal(20,0),decimal(20,0),decimal(32,0),decimal(38,0),decimal(14,4),decimal(14,4),decimal(14,4),bigint
+              escape.delim \
+              serialization.lib org.apache.hadoop.hive.serde2.lazybinary.LazyBinarySerDe
+            serde: org.apache.hadoop.hive.serde2.lazybinary.LazyBinarySerDe
+          
+              input format: org.apache.hadoop.mapred.SequenceFileInputFormat
+              output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat
+              properties:
+                column.name.delimiter ,
+                columns _col0,_col1,_col2,_col3,_col4,_col5,_col6,_col7,_col8,_col9
+                columns.types string,string,decimal(20,0),decimal(20,0),decimal(32,0),decimal(38,0),decimal(14,4),decimal(14,4),decimal(14,4),bigint
+                escape.delim \
+                serialization.lib org.apache.hadoop.hive.serde2.lazybinary.LazyBinarySerDe
+              serde: org.apache.hadoop.hive.serde2.lazybinary.LazyBinarySerDe
+      Truncated Path -> Alias:
+        hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/e483b03a-15cf-4d5a-bbdd-63f55fe0711a/hive_2021-11-29_14-41-50_288_8855124698239780965-1/-mr-10004 [hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/e483b03a-15cf-4d5a-bbdd-63f55fe0711a/hive_2021-11-29_14-41-50_288_8855124698239780965-1/-mr-10004]
+      Needs Tagging: false
+      Reduce Operator Tree:
+        Select Operator
+          expressions: KEY.reducesinkkey0 (type: string), KEY.reducesinkkey1 (type: string), VALUE._col0 (type: decimal(20,0)), VALUE._col1 (type: decimal(20,0)), VALUE._col2 (type: decimal(32,0)), VALUE._col3 (type: decimal(38,0)), VALUE._col4 (type: decimal(14,4)), VALUE._col5 (type: decimal(14,4)), VALUE._col6 (type: decimal(14,4)), VALUE._col7 (type: bigint)
+          outputColumnNames: _col0, _col1, _col2, _col3, _col4, _col5, _col6, _col7, _col8, _col9
+          File Output Operator
+            compressed: false
+            GlobalTableId: 0
+            directory: hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/e483b03a-15cf-4d5a-bbdd-63f55fe0711a/hive_2021-11-29_14-41-50_288_8855124698239780965-1/-mr-10001/.hive-staging_hive_2021-11-29_14-41-50_288_8855124698239780965-1/-ext-10002
+            NumFilesPerFileSink: 1
+            Stats Publishing Key Prefix: hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/e483b03a-15cf-4d5a-bbdd-63f55fe0711a/hive_2021-11-29_14-41-50_288_8855124698239780965-1/-mr-10001/.hive-staging_hive_2021-11-29_14-41-50_288_8855124698239780965-1/-ext-10002/
+            table:
+                input format: org.apache.hadoop.mapred.SequenceFileInputFormat
+                output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat
+                properties:
+                  columns _col0,_col1,_col2,_col3,_col4,_col5,_col6,_col7,_col8,_col9
+                  columns.types string:string:decimal(20,0):decimal(20,0):decimal(32,0):decimal(38,0):decimal(14,4):decimal(14,4):decimal(14,4):bigint
+                  escape.delim \
+                  hive.serialization.extend.additional.nesting.levels true
+                  serialization.escape.crlf true
+                  serialization.format 1
+                  serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+            TotalFiles: 1
+            GatherStats: false
+            MultiFileSpray: false
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+        ListSink
+
+

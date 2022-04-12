@@ -1,0 +1,3 @@
+[submodule "Algorithm_Old"]
+	path = Algorithm_Old
+	url = https://github.com/JSA-Insubria/Algorithm.git

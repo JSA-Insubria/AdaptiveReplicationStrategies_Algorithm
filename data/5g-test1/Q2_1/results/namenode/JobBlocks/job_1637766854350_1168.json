@@ -1,0 +1,609 @@
+{
+  "jobName" : "job_1637766854350_1168",
+  "paths" : [ "hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009" ],
+  "locations" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+  "jobDataPaths" : [ {
+    "path" : "hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009",
+    "filesList" : [ {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000000_0; isDirectory=false; length=41022189; replication=3; blocksize=134217728; modification_time=1638199068224; access_time=1638199043352; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000001_0; isDirectory=false; length=41885527; replication=3; blocksize=134217728; modification_time=1638199059257; access_time=1638199040307; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000002_0; isDirectory=false; length=40930834; replication=3; blocksize=134217728; modification_time=1638199054429; access_time=1638199037260; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000003_0; isDirectory=false; length=41359737; replication=3; blocksize=134217728; modification_time=1638199042418; access_time=1638199035563; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000004_0; isDirectory=false; length=41221324; replication=3; blocksize=134217728; modification_time=1638199042614; access_time=1638199036331; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000005_0; isDirectory=false; length=42141707; replication=3; blocksize=134217728; modification_time=1638199068461; access_time=1638199042746; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000006_0; isDirectory=false; length=41254747; replication=3; blocksize=134217728; modification_time=1638199058786; access_time=1638199039557; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000007_0; isDirectory=false; length=41208401; replication=3; blocksize=134217728; modification_time=1638199054936; access_time=1638199040312; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000008_0; isDirectory=false; length=42029949; replication=3; blocksize=134217728; modification_time=1638199042265; access_time=1638199035460; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000009_0; isDirectory=false; length=41219542; replication=3; blocksize=134217728; modification_time=1638199067668; access_time=1638199042392; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000010_0; isDirectory=false; length=41434593; replication=3; blocksize=134217728; modification_time=1638199068010; access_time=1638199040073; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000011_0; isDirectory=false; length=41574454; replication=3; blocksize=134217728; modification_time=1638199042574; access_time=1638199036109; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000012_0; isDirectory=false; length=41110654; replication=3; blocksize=134217728; modification_time=1638199059841; access_time=1638199040430; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000013_0; isDirectory=false; length=41839891; replication=3; blocksize=134217728; modification_time=1638199059613; access_time=1638199040726; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000014_0; isDirectory=false; length=40939800; replication=3; blocksize=134217728; modification_time=1638199058109; access_time=1638199038161; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000015_0; isDirectory=false; length=41366372; replication=3; blocksize=134217728; modification_time=1638199054645; access_time=1638199039310; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000016_0; isDirectory=false; length=41572707; replication=3; blocksize=134217728; modification_time=1638199059278; access_time=1638199043806; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000017_0; isDirectory=false; length=41409527; replication=3; blocksize=134217728; modification_time=1638199067743; access_time=1638199042337; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000018_0; isDirectory=false; length=41388926; replication=3; blocksize=134217728; modification_time=1638199041972; access_time=1638199034773; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000019_0; isDirectory=false; length=40948391; replication=3; blocksize=134217728; modification_time=1638199066843; access_time=1638199040803; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000020_0; isDirectory=false; length=41351354; replication=3; blocksize=134217728; modification_time=1638199054381; access_time=1638199040254; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000021_0; isDirectory=false; length=41043015; replication=3; blocksize=134217728; modification_time=1638199067612; access_time=1638199043561; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000022_0; isDirectory=false; length=41409593; replication=3; blocksize=134217728; modification_time=1638199053981; access_time=1638199039438; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000023_0; isDirectory=false; length=41665829; replication=3; blocksize=134217728; modification_time=1638199067866; access_time=1638199041074; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      } ]
+    }, {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/tmp/hive/hadoop/bcb60269-bf7e-469e-bdaf-37ee7c1e1a2b/hive_2021-11-29_15-14-34_031_5061438202641014899-1/-mr-10009/000024_0; isDirectory=false; length=41543722; replication=3; blocksize=134217728; modification_time=1638199054126; access_time=1638199037146; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      } ]
+    } ]
+  } ]
+}

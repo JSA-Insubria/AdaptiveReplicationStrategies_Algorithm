@@ -1,0 +1,19 @@
+{
+  "fileName" : "nation",
+  "filePath" : "hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/nation/nation.tbl",
+  "fileSize" : 2224,
+  "blockLocations" : [ {
+    "blockId" : "blk_1073759974_19150",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.187:9866", "9.4.193.228:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 0,
+      "length" : 2224,
+      "corrupt" : false
+    }
+  } ]
+}

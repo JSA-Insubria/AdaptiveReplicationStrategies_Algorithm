@@ -1,0 +1,864 @@
+{
+  "fileName" : "orders",
+  "filePath" : "hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/orders/orders.tbl",
+  "fileSize" : 8852127362,
+  "blockLocations" : [ {
+    "blockId" : "blk_1073759613_18789",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.166:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 0,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759614_18790",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.110:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 134217728,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759615_18791",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.110:9866", "9.4.193.199:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.199:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 268435456,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759616_18792",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.187:9866", "9.4.193.110:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 402653184,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759617_18793",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.199:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 536870912,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759618_18794",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.187:9866", "9.4.193.199:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.199:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 671088640,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759619_18795",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.228:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 805306368,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759620_18796",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.187:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 939524096,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759621_18797",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.228:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 1073741824,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759622_18798",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.228:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 1207959552,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759623_18799",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.166:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 1342177280,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759624_18800",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.110:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 1476395008,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759625_18801",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.187:9866", "9.4.193.166:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 1610612736,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759626_18802",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.187:9866", "9.4.193.228:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 1744830464,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759627_18803",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.187:9866", "9.4.193.228:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 1879048192,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759628_18804",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.187:9866", "9.4.193.199:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.199:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 2013265920,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759629_18805",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.199:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 2147483648,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759630_18806",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.110:9866", "9.4.193.166:9866", "9.4.193.228:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.228:9866" ],
+      "storageIds" : [ "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 2281701376,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759631_18807",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.228:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 2415919104,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759632_18808",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.110:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 2550136832,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759633_18809",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.110:9866", "9.4.193.166:9866", "9.4.193.228:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.228:9866" ],
+      "storageIds" : [ "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 2684354560,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759634_18810",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.228:9866", "9.4.193.199:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.199:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 2818572288,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759635_18811",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.110:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 2952790016,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759636_18812",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.187:9866", "9.4.193.199:9866", "9.4.193.228:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.228:9866" ],
+      "storageIds" : [ "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 3087007744,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759637_18813",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.199:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 3221225472,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759638_18814",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.166:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 3355443200,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759639_18815",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.187:9866", "9.4.193.199:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 3489660928,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759640_18816",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.187:9866", "9.4.193.228:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 3623878656,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759641_18817",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.110:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 3758096384,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759642_18818",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.110:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 3892314112,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759643_18819",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.166:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 4026531840,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759644_18820",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.199:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 4160749568,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759645_18821",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.110:9866", "9.4.193.166:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 4294967296,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759646_18822",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.187:9866", "9.4.193.199:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.199:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 4429185024,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759647_18823",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.166:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 4563402752,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759648_18824",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.110:9866", "9.4.193.228:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 4697620480,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759649_18825",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.110:9866", "9.4.193.228:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 4831838208,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759650_18826",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.166:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 4966055936,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759651_18827",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.187:9866", "9.4.193.199:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.199:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 5100273664,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759652_18828",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.110:9866", "9.4.193.166:9866", "9.4.193.199:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.199:9866" ],
+      "storageIds" : [ "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 5234491392,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759653_18829",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.187:9866", "9.4.193.110:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 5368709120,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759654_18830",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.110:9866", "9.4.193.199:9866", "9.4.193.228:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.228:9866" ],
+      "storageIds" : [ "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 5502926848,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759655_18831",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.228:9866", "9.4.193.199:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.199:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 5637144576,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759656_18832",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.228:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 5771362304,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759657_18833",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.199:9866", "9.4.193.228:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.228:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 5905580032,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759658_18834",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.110:9866", "9.4.193.187:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 6039797760,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759659_18835",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.110:9866", "9.4.193.228:9866", "9.4.193.199:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.199:9866" ],
+      "storageIds" : [ "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 6174015488,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759660_18836",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.199:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 6308233216,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759661_18837",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.199:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 6442450944,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759662_18838",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.187:9866", "9.4.193.166:9866", "9.4.193.199:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.199:9866" ],
+      "storageIds" : [ "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 6576668672,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759663_18839",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.228:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 6710886400,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759664_18840",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.110:9866", "9.4.193.199:9866", "9.4.193.228:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.228:9866" ],
+      "storageIds" : [ "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 6845104128,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759665_18841",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.110:9866", "9.4.193.199:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.199:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 6979321856,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759666_18842",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.166:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 7113539584,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759667_18843",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.199:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 7247757312,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759668_18844",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.110:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 7381975040,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759669_18845",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.228:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 7516192768,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759670_18846",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.110:9866", "9.4.193.228:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.228:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 7650410496,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759671_18847",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.187:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 7784628224,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759672_18848",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.199:9866", "9.4.193.228:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 7918845952,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759673_18849",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.228:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 8053063680,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759674_18850",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.110:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 8187281408,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759675_18851",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.110:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.110:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-f9a2263b-d904-404b-ad05-1599208be7e0", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 8321499136,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759676_18852",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-002.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.187:9866", "9.4.193.166:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.166:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-a0136566-424c-457d-be69-80d24fe0f8b9" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 8455716864,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759677_18853",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-005.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com", "drl-bd-001.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.228:9866", "9.4.193.187:9866", "9.4.193.110:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.228:9866", "/default-rack/9.4.193.187:9866", "/default-rack/9.4.193.110:9866" ],
+      "storageIds" : [ "DS-478f5388-c4dc-4dce-ad84-d3e50d054275", "DS-3c4572da-72cf-4edc-859e-fc75294c1696", "DS-f9a2263b-d904-404b-ad05-1599208be7e0" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 8589934592,
+      "length" : 134217728,
+      "corrupt" : false
+    }
+  }, {
+    "blockId" : "blk_1073759678_18854",
+    "blockLocation" : {
+      "hosts" : [ "drl-bd-002.sl.cloud9.ibm.com", "drl-bd-004.sl.cloud9.ibm.com", "drl-bd-003.sl.cloud9.ibm.com" ],
+      "cachedHosts" : [ ],
+      "names" : [ "9.4.193.166:9866", "9.4.193.199:9866", "9.4.193.187:9866" ],
+      "topologyPaths" : [ "/default-rack/9.4.193.166:9866", "/default-rack/9.4.193.199:9866", "/default-rack/9.4.193.187:9866" ],
+      "storageIds" : [ "DS-a0136566-424c-457d-be69-80d24fe0f8b9", "DS-feb6b63b-2345-4d47-a33e-64dbda79893f", "DS-3c4572da-72cf-4edc-859e-fc75294c1696" ],
+      "storageTypes" : [ "DISK", "DISK", "DISK" ],
+      "offset" : 8724152320,
+      "length" : 127975042,
+      "corrupt" : false
+    }
+  } ]
+}

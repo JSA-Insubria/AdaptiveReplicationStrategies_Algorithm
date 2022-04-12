@@ -1,0 +1,33 @@
+{
+  "jobName" : "job_1637766854350_1166",
+  "paths" : [ "hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/nation" ],
+  "locations" : [ "drl-bd-002.sl.cloud9.ibm.com" ],
+  "jobDataPaths" : [ {
+    "path" : "hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/nation",
+    "filesList" : [ {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/nation/nation.tbl; isDirectory=false; length=2224; replication=3; blocksize=134217728; modification_time=1638196698217; access_time=1638196698203; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      } ]
+    } ]
+  } ]
+}

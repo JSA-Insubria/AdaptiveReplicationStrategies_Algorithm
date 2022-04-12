@@ -1,0 +1,18 @@
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage [DDL]
+  Stage-1 depends on stages: Stage-0 [FETCH]
+
+STAGE PLANS:
+  Stage: Stage-0
+      Show Table Operator:
+        Show Tables
+          database name: default
+          result file: file:/tmp/hive/java/hadoop/e15490f5-2296-4860-acc4-5c3daeac5ef8/hive_2021-11-29_14-14-42_279_6457623873983674414-1/-local-10000
+
+  Stage: Stage-1
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+        ListSink
+
+

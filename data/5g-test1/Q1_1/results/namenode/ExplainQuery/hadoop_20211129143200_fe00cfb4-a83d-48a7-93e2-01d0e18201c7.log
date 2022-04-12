@@ -1,0 +1,44 @@
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage [MOVE]
+  Stage-1 depends on stages: Stage-0 [STATS]
+
+STAGE PLANS:
+  Stage: Stage-0
+    Move Operator
+      tables:
+          replace: true
+          source: file:/home/hadoop/test-data/dataset/orders.tbl
+          table:
+              input format: org.apache.hadoop.mapred.TextInputFormat
+              output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+              properties:
+                COLUMN_STATS_ACCURATE {"BASIC_STATS":"true","COLUMN_STATS":{"o_clerk":"true","o_comment":"true","o_custkey":"true","o_orderdate":"true","o_orderkey":"true","o_orderpriority":"true","o_orderstatus":"true","o_shippriority":"true","o_totalprice":"true"}}
+                bucket_count -1
+                bucketing_version 2
+                column.name.delimiter ,
+                columns o_orderkey,o_custkey,o_orderstatus,o_totalprice,o_orderdate,o_orderpriority,o_clerk,o_shippriority,o_comment
+                columns.comments 
+                columns.types bigint:bigint:string:decimal(10,0):date:string:string:bigint:string
+                field.delim |
+                file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                line.delim 
+
+                location hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/orders
+                name default.orders
+                numFiles 0
+                numRows 0
+                rawDataSize 0
+                serialization.ddl struct orders { i64 o_orderkey, i64 o_custkey, string o_orderstatus, decimal(10,0) o_totalprice, date o_orderdate, string o_orderpriority, string o_clerk, i64 o_shippriority, string o_comment}
+                serialization.format |
+                serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                totalSize 0
+                transient_lastDdlTime 1638196253
+              serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+              name: default.orders
+
+  Stage: Stage-1
+    Stats Work
+      Basic Stats Work:
+
+

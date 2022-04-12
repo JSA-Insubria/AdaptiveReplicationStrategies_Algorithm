@@ -1,0 +1,44 @@
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage [MOVE]
+  Stage-1 depends on stages: Stage-0 [STATS]
+
+STAGE PLANS:
+  Stage: Stage-0
+    Move Operator
+      tables:
+          replace: true
+          source: file:/home/hadoop/test-data/dataset/region.tbl
+          table:
+              input format: org.apache.hadoop.mapred.TextInputFormat
+              output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+              properties:
+                COLUMN_STATS_ACCURATE {"BASIC_STATS":"true","COLUMN_STATS":{"r_comment":"true","r_name":"true","r_regionkey":"true"}}
+                bucket_count -1
+                bucketing_version 2
+                column.name.delimiter ,
+                columns r_regionkey,r_name,r_comment
+                columns.comments 
+                columns.types bigint:string:string
+                field.delim |
+                file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                line.delim 
+
+                location hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/region
+                name default.region
+                numFiles 0
+                numRows 0
+                rawDataSize 0
+                serialization.ddl struct region { i64 r_regionkey, string r_name, string r_comment}
+                serialization.format |
+                serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                totalSize 0
+                transient_lastDdlTime 1638196254
+              serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+              name: default.region
+
+  Stage: Stage-1
+    Stats Work
+      Basic Stats Work:
+
+

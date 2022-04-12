@@ -1,0 +1,1273 @@
+{
+  "query" : "select\n\ts_acctbal,\n\ts_name,\n\tn_name,\n\tp_partkey,\n\tp_mfgr,\n\ts_address,\n\ts_phone,\n\ts_comment\nfrom\n\tpart,\n\tsupplier,\n\tpartsupp,\n\tnation,\n\tregion\nwhere\n\tp_partkey = ps_partkey\n\tand s_suppkey = ps_suppkey\n\tand p_size = 27\n\tand p_type like '%STEEL'\n\tand s_nationkey = n_nationkey\n\tand n_regionkey = r_regionkey\n\tand r_name = 'EUROPE'\n\tand ps_supplycost = (\n\t\tselect\n\t\t\tmin(ps_supplycost)\n\t\tfrom\n\t\t\tpartsupp,\n\t\t\tsupplier,\n\t\t\tnation,\n\t\t\tregion\n\t\twhere\n\t\t\tp_partkey = ps_partkey\n\t\t\tand s_suppkey = ps_suppkey\n\t\t\tand s_nationkey = n_nationkey\n\t\t\tand n_regionkey = r_regionkey\n\t\t\tand r_name = 'EUROPE'\n\t)\norder by\n\ts_acctbal desc,\n\tn_name,\n\ts_name,\n\tp_partkey",
+  "tableList" : [ {
+    "tableName" : "default.supplier",
+    "queryDataFileList" : [ {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/supplier/supplier.tbl; isDirectory=false; length=71371820; replication=3; blocksize=134217728; modification_time=1638196265114; access_time=1638196264182; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        } ]
+      } ]
+    } ]
+  }, {
+    "tableName" : "default.region",
+    "queryDataFileList" : [ {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/region/region.tbl; isDirectory=false; length=389; replication=3; blocksize=134217728; modification_time=1638196698354; access_time=1638196698338; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      } ]
+    } ]
+  }, {
+    "tableName" : "default.nation",
+    "queryDataFileList" : [ {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/nation/nation.tbl; isDirectory=false; length=2224; replication=3; blocksize=134217728; modification_time=1638196698217; access_time=1638196698203; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      } ]
+    } ]
+  }, {
+    "tableName" : "default.part",
+    "queryDataFileList" : [ {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/part/part.tbl; isDirectory=false; length=1221051905; replication=3; blocksize=134217728; modification_time=1638196263925; access_time=1638196254729; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 1,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 2,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 3,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 4,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      }, {
+        "blockId" : 5,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 6,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      }, {
+        "blockId" : 7,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 8,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      }, {
+        "blockId" : 9,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      } ]
+    } ]
+  }, {
+    "tableName" : "default.partsupp",
+    "queryDataFileList" : [ {
+      "file" : "HdfsLocatedFileStatus{path=hdfs://drl-bd-000.sl.cloud9.ibm.com:9000/user/hive/warehouse/partsupp/partsupp.tbl; isDirectory=false; length=6077819784; replication=3; blocksize=134217728; modification_time=1638196311636; access_time=1638196265354; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false; hasAcl=false; isEncrypted=false; isErasureCoded=false}",
+      "blockList" : [ {
+        "blockId" : 0,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      }, {
+        "blockId" : 1,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 2,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 3,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 4,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        } ]
+      }, {
+        "blockId" : 5,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 6,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        } ]
+      }, {
+        "blockId" : 7,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      }, {
+        "blockId" : 8,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 9,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        } ]
+      }, {
+        "blockId" : 10,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      }, {
+        "blockId" : 11,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        } ]
+      }, {
+        "blockId" : 12,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      }, {
+        "blockId" : 13,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      }, {
+        "blockId" : 14,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 15,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 16,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      }, {
+        "blockId" : 17,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      }, {
+        "blockId" : 18,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 19,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        } ]
+      }, {
+        "blockId" : 20,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 21,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 22,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 23,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      }, {
+        "blockId" : 24,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 25,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 26,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      }, {
+        "blockId" : 27,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 28,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      }, {
+        "blockId" : 29,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 30,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        } ]
+      }, {
+        "blockId" : 31,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 32,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 33,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      }, {
+        "blockId" : 34,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 35,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 36,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 37,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      }, {
+        "blockId" : 38,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 39,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 40,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 41,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        } ]
+      }, {
+        "blockId" : 42,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        } ]
+      }, {
+        "blockId" : 43,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      }, {
+        "blockId" : 44,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.199:9866",
+          "storageId" : "DS-feb6b63b-2345-4d47-a33e-64dbda79893f",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.199:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.166:9866",
+          "storageId" : "DS-a0136566-424c-457d-be69-80d24fe0f8b9",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.166:9866"
+        } ]
+      }, {
+        "blockId" : 45,
+        "replicaList" : [ {
+          "replicaId" : 1,
+          "location" : "9.4.193.110:9866",
+          "storageId" : "DS-f9a2263b-d904-404b-ad05-1599208be7e0",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.110:9866"
+        }, {
+          "replicaId" : 2,
+          "location" : "9.4.193.228:9866",
+          "storageId" : "DS-478f5388-c4dc-4dce-ad84-d3e50d054275",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.228:9866"
+        }, {
+          "replicaId" : 3,
+          "location" : "9.4.193.187:9866",
+          "storageId" : "DS-3c4572da-72cf-4edc-859e-fc75294c1696",
+          "storageType" : "DISK",
+          "topologyPath" : "/default-rack/9.4.193.187:9866"
+        } ]
+      } ]
+    } ]
+  } ]
+}

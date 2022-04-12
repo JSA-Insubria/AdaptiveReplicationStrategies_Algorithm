@@ -1,0 +1,7 @@
+pandas
+numpy
+docplex
+gurobipy
+pulp
+plotly
+IPython

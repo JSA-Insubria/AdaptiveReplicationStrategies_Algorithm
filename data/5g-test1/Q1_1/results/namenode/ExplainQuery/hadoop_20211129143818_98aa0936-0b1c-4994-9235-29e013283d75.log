@@ -1,0 +1,31 @@
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage [DDL]
+
+STAGE PLANS:
+  Stage: Stage-1
+      Create View Operator:
+        Create View
+          columns: supplier_no bigint, total_revenue decimal(32,0)
+          expanded text: SELECT `l_suppkey` AS `supplier_no`, `_c1` AS `total_revenue` FROM (select
+		`lineitem`.`l_suppkey`,
+		sum(`lineitem`.`l_extendedprice` * (1 - `lineitem`.`l_discount`))
+	from
+		`default`.`lineitem`
+	where
+		`lineitem`.`l_shipdate` >= date '1996-12-01'
+		and `lineitem`.`l_shipdate` < date '1996-12-01' + interval '3' month
+	group by
+		`lineitem`.`l_suppkey`) `default.revenue0`
+          name: default.revenue0
+          original text: select
+		l_suppkey,
+		sum(l_extendedprice * (1 - l_discount))
+	from
+		lineitem
+	where
+		l_shipdate >= date '1996-12-01'
+		and l_shipdate < date '1996-12-01' + interval '3' month
+	group by
+		l_suppkey
+
+
